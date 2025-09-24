@@ -17,6 +17,12 @@ const ConditionalStyle = () => {
         fontWeight: isSpecial ? 'bold' : 'normal',
         }
 
+    const specialText = {
+        textDecoration: 'underline',
+        fontStyle: 'italic',
+        fontWeight: 'bold',
+    }
+
   return (
     <div>
         <button onClick={toggleButton}>            
@@ -24,7 +30,7 @@ const ConditionalStyle = () => {
         </button>
 
       <div style={commonStyle}>
-        This is a {isSpecial ? 'Special' : 'Normal'} Style!
+        This is a {isSpecial ? <span style={specialText}>Special</span> : 'Normal'} Style!
       </div>
     </div>
   )
