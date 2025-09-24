@@ -22,7 +22,7 @@ const ConditionalStyle = () => {
         </button>
 
       <div style={commonStyle}>
-        This is a Normal Style!
+        This is a {isSpecial ? 'Special' : 'Normal'} Style!
       </div>
     </div>
   )
