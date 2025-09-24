@@ -3,7 +3,7 @@ import React from 'react'
 const ConditionalStyle = () => {
   return (
     <div>
-      Conditional Style
+      <button>Make it Special</button>
     </div>
   )
 }
