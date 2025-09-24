@@ -17,10 +17,8 @@ const ConditionalStyle = () => {
 
   return (
     <div>
-        <button onClick={toggleButton}>
-            {
-                isSpecial ? 'Make it Normal' : 'Make it Special'
-            }
+        <button onClick={toggleButton}>            
+                Make it { isSpecial ? 'Normal' : 'Special'}            
         </button>
 
       <div style={commonStyle}>
