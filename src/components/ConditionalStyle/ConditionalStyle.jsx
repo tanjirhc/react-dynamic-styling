@@ -22,6 +22,10 @@ const ConditionalStyle = () => {
         fontStyle: 'italic',
         fontWeight: 'bold',
     }
+    const normalText = {
+        fontWeight: 'bold',
+        fontSize: '16px',
+    }
 
   return (
     <div>
@@ -30,7 +34,7 @@ const ConditionalStyle = () => {
         </button>
 
       <div style={commonStyle}>
-        This is a {isSpecial ? <span style={specialText}>Special</span> : 'Normal'} Style!
+        This is a {isSpecial ? <span style={specialText}>Special</span> : <span style={normalText}>Normal</span>} Style!
       </div>
     </div>
   )
