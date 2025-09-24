@@ -12,7 +12,9 @@ const ConditionalStyle = () => {
         border: '1px solid black',
         borderRadius: '5px',
         margin: '10px 0',
-        backgroundColor: 'lightgray'
+        backgroundColor: isSpecial ? 'lightblue' : 'lightgray',
+        color: isSpecial ? 'darkblue' : 'black',
+        fontWeight: isSpecial ? 'bold' : 'normal',
         }
 
   return (
