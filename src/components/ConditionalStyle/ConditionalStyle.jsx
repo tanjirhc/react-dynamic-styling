@@ -4,8 +4,7 @@ const ConditionalStyle = () => {
     const [isSpecial, setIsSpecial] = React.useState(false);
 
     const toggleButton = () => {
-        // Logic to toggle styles will go here
-        console.log('Clicked');
+        setIsSpecial(!isSpecial);
     }
 
     const commonStyle = {
