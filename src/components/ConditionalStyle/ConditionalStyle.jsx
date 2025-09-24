@@ -2,6 +2,11 @@ import React from 'react'
 
 const ConditionalStyle = () => {
 
+    const toggleButton = () => {
+        // Logic to toggle styles will go here
+        console.log('Clicked');
+    }
+
     const commonStyle = {
         padding: '10px',
         border: '1px solid black',
@@ -12,7 +17,7 @@ const ConditionalStyle = () => {
 
   return (
     <div>
-      <button>Make it Special</button>
+      <button onClick={toggleButton}>Make it Special</button>
 
       <div style={commonStyle}>
         This is a Normal Style!
